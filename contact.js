@@ -1,15 +1,9 @@
-function contactForm(event) {
-    event.preventDefault();  
-
-    var confirmation = confirm("Are you sure you want to submit?");
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
     
-    if (confirmation) {
-        alert("Successfully Submitted"); 
-        
-        event.target.submit(); 
-    } else {
-        return false;  
-    }
-}
 
-document.getElementById('contactForm').addEventListener('submit', contactForm);
+    alert('Your message has been sent successfully!');
+    
+
+    this.reset();
+  });
